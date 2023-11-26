@@ -189,78 +189,11 @@ For fish shell, append the following to `~/.config/fish/config.fish`:
 set -gx PATH $PATH "/usr/local/go/bin"
 ```
 
-## 04 - Neovim Prerequisites
+## 04 - Neovim
 
-### To fulfill
+Follow the instructions in https://github.com/yamgent/mynvim/blob/main/docs/setup.md
 
-* Ripgrep (used by: Spectre [find & replace], Telescope)
-    * `cargo install ripgrep`
-* Sed (used by: Spectre [find & replace], Telescope)
-    * Windows: `scoop install sed`
-    * MacOS: `brew install gnu-sed`
-    * Linux: Should be installed by default
-* unzip (used by: mason-nvim-dap)
-    * Windows: Should be installed by default
-    * Ubuntu:
-```sh
-sudo apt install unzip
-```
-
-### Already fulfilled
-
-* Nerd Fonts (used by: Telescope, lualine, ...)
-    * wezterm already has it.
-    * https://www.nerdfonts.com/
-* Clang (used by: Treesitter)
-    * We already installed above.
-* Node (used by: Lsp)
-    * We already installed above.
-
-## 05 - Neovim
-
-#### Install
-
-* Windows:
-
-```sh
-scoop install neovim
-```
-
-* macOS:
-
-```sh
-brew install neovim
-```
-
-* Ubuntu:
-
-```sh
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-sudo mv nvim.appimage /usr/local/bin/nvim
-```
-
-Source: https://github.com/neovim/neovim/wiki/Installing-Neovim
-
-#### Config - Git
-```sh
-git config --global core.editor nvim
-```
-
-#### Config - Nvim
-
-* Windows
-    * Link:
-        * `~/AppData/Local/nvim/init.lua` -> `files/nvim/init.lua`
-        * `~/AppData/Local/nvim/lazy-lock.json` -> `files/nvim/lazy-lock.json`
-        * `~/AppData/Local/nvim/lua/wangleng/` -> `files/nvim/lua/wangleng/`
-* Unix
-    * Link:
-        * `~/.config/nvim/init.lua` -> `files/nvim/init.lua`
-        * `~/.config/nvim/lazy-lock.json` -> `files/nvim/lazy-lock.json`
-        * `~/.config/nvim/lua/wangleng/` -> `files/nvim/lua/wangleng/`
-
-## 06 - Other dotfiles
+## 05 - Other dotfiles
 
 ### Gitui
 
@@ -300,7 +233,7 @@ sudo apt install tmux
     * Link: `~/.config/tmux/statusline.conf` -> `files/tmux/tmux/statusline.conf`
     * Link: `~/.config/tmux/macos.conf` -> `files/tmux/tmux/macos.conf`
 
-## 07 - Others
+## 06 - Others
 
 ### Extras Utils
 
