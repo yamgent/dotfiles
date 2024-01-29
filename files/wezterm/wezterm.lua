@@ -38,6 +38,7 @@ config.keys = {
     { key = " ", mods = "SHIFT|CTRL",   action = "QuickSelect" },
     { key = "v", mods = "SHIFT|CTRL",   action = wezterm.action.PasteFrom 'Clipboard' },
     { key = "c", mods = "SHIFT|CTRL",   action = wezterm.action.CopyTo 'Clipboard' },
+    { key = "l", mods = "SHIFT|CTRL",   action = wezterm.action.ShowDebugOverlay },
 }
 
 local search_mode = wezterm.gui.default_key_tables().search_mode
