@@ -40,6 +40,7 @@ ln -s <repo-file> <final-file>`
 #### Config
 
 * Link `~/.config/wezterm/wezterm.lua` -> `files/wezterm/wezterm.lua`
+* For macOS, there is an additional step to expose `wezterm` as a cli command. See instructions at https://wezfurlong.org/wezterm/install/macos.html for more details.
 
 (Note: On Windows, don't use `/AppData/` for wezterm. We literally meant `C:\Users\<name>\.config\wezterm\wezterm.lua`.)
 
