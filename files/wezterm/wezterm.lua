@@ -73,4 +73,23 @@ if wezterm.target_triple == "x86_64-apple-darwin" then
     )
 end
 
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+    -- on Windows, for some reason it would not select
+    -- a DiscreteGpu automatically
+    --
+    -- if we don't use one, it will cause input lag
+    -- when using the WebGpu frontend, so force it
+    -- to use DiscreteGpu instead
+    --
+    -- code taken from:
+    -- https://github.com/wez/wezterm/issues/4278#issuecomment-1726978476
+    for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
+        if gpu.device_type == "DiscreteGpu" then
+            config.webgpu_preferred_adapter = gpu
+            break
+        end
+    end
+end
+
 return config
+
