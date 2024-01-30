@@ -40,7 +40,6 @@ ln -s <repo-file> <final-file>`
 #### Config
 
 * Link `~/.config/wezterm/wezterm.lua` -> `files/wezterm/wezterm.lua`
-* For macOS, there is an additional step to expose `wezterm` as a cli command. See instructions at https://wezfurlong.org/wezterm/install/macos.html for more details.
 
 (Note: On Windows, don't use `/AppData/` for wezterm. We literally meant `C:\Users\<name>\.config\wezterm\wezterm.lua`.)
 
@@ -109,6 +108,12 @@ Append the following to `~/.config/fish/config.fish` to show git info:
 
 ```fish
 set __fish_git_prompt_show_informative_status 1
+```
+
+For macOS, wezterm requires an additional step to expose `wezterm` as a cli command. See instructions at https://wezfurlong.org/wezterm/install/macos.html for more details. The basic detail is to add this to the config:
+
+```fish
+set -gx PATH "/Applications/WezTerm.app/Contents/MacOS" $PATH
 ```
 
 ## 03 - Languages
