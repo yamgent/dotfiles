@@ -60,7 +60,9 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
     )
 end
 
-if wezterm.target_triple == "x86_64-apple-darwin" then
+if wezterm.target_triple == "x86_64-apple-darwin" or
+    wezterm.target_triple == "aarch64-apple-darwin"
+then
     config.font_size = 14
 
     -- honor mac os clipboard shortcuts
