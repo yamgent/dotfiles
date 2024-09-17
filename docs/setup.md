@@ -241,6 +241,33 @@ sudo apt install tmux
 
 ## 06 - Others
 
+### Starship
+
+#### Install
+
+```sh
+cargo install starship --locked
+
+# or alternatively, if dependencies are missing
+curl -sS https://starship.rs/install.sh | sh
+```
+
+#### Config
+
+* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+
+```ps
+Invoke-Expression (&starship init powershell)
+```
+
+* Fish: Add to `~/.config/fish/config.fish`:
+
+```sh
+starship init fish | source
+```
+
+Source: https://starship.rs/
+
 ### Extras Utils
 
 * bat
