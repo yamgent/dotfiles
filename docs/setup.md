@@ -249,6 +249,19 @@ sudo apt install tmux
     * `cargo install exa`
 * delta
     * `cargo install git-delta`
+* starship
+    * `cargo install starship --locked`
+    * Powershell:
+        * Add to `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+```ps
+Invoke-Expression (&starship init powershell)
+```
+    * Fish:
+        * Add to `~/.config/fish/config.fish`:
+```sh
+starship init fish | source
+```
+    * Source: https://starship.rs/
 
 ### Optional Utils
 
