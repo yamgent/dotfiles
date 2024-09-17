@@ -247,6 +247,9 @@ sudo apt install tmux
 
 ```sh
 cargo install starship --locked
+
+# or alternatively, if dependencies are missing
+curl -sS https://starship.rs/install.sh | sh
 ```
 
 #### Config
