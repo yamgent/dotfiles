@@ -36,6 +36,7 @@ ln -s <repo-file> <final-file>`
 
 1. Download wezterm from: https://wezfurlong.org/wezterm/installation.html
 2. Install 'Cascadia Code' from: https://github.com/microsoft/cascadia-code/releases
+3. Install 'Inter' from: https://fonts.google.com/specimen/Inter
 
 #### Config
 

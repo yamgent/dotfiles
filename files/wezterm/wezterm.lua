@@ -4,7 +4,10 @@ local config = wezterm.config_builder()
 
 config.disable_default_key_bindings = true
 config.enable_scroll_bar = true
-config.font = wezterm.font 'Cascadia Code'
+config.font = wezterm.font('JetBrains Mono', { weight = 'Medium' })
+config.window_frame = {
+    font = wezterm.font('Inter', { weight = 'Medium' })
+}
 
 config.leader = { key = "b", mods = "CTRL" }
 config.keys = {
@@ -95,4 +98,3 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 end
 
 return config
-
