@@ -89,6 +89,7 @@ Source: https://git-scm.com/downloads
 # Install Powershell 7, which install pwsh.exe
 winget install --id Microsoft.PowerShell --source winget
 ```
+
 * macOS: N.A.
 * Linux: N.A.
 
