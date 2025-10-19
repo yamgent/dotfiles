@@ -181,7 +181,7 @@ Source:
 
 #### Config
 
-* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+* Powershell (Windows): Create `~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`:
 
 ```ps
 Invoke-Expression (&starship init powershell)
@@ -267,7 +267,7 @@ curl -sS https://starship.rs/install.sh | sh
 
 #### Config
 
-* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+* Powershell (Windows): Create `~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`:
 
 ```ps
 Invoke-Expression (&starship init powershell)
