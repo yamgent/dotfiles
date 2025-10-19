@@ -158,16 +158,22 @@ For fish shell, append the following to `~/.config/fish/config.fish`:
 set -gx PATH "$HOME/.cargo/bin" $PATH
 ```
 
-### Volta (node, yarn, ...)
+### fnm (node, yarn, ...)
 
 #### Install
 
-* Windows: Download from https://docs.volta.sh/guide/getting-started.
+* Windows
+
+```sh
+scoop install fnm
+fnm i <put-version-here>
+```
+
 * Unix:
 
 ```sh
-curl https://get.volta.sh | bash
-volta install node
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm i <put-version-here>
 ```
 
 Source:
@@ -175,11 +181,17 @@ Source:
 
 #### Config
 
-For fish shell, append the following to `~/.config/fish/config.fish`:
+* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+
+```ps
+Invoke-Expression (&starship init powershell)
+```
+
+* Fish:
+For fish shell, create the file `~/.config/fish/conf.d/fnm.fish`, then add:
 
 ```fish
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
+fnm env --use-on-cd --shell fish | source
 ```
 
 ### Golang
