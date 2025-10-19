@@ -81,6 +81,17 @@ Source: https://git-scm.com/downloads
 
 ## 02 - Shell
 
+### Powershell
+
+* Windows: Instructions from https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5
+
+```sh
+# Install Powershell 7, which install pwsh.exe
+winget install --id Microsoft.PowerShell --source winget
+```
+* macOS: N.A.
+* Linux: N.A.
+
 ### Fish shell
 
 #### Install
@@ -181,7 +192,7 @@ Source:
 
 #### Config
 
-* Powershell (Windows): Create `~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`:
+* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
 
 ```ps
 Invoke-Expression (&starship init powershell)
@@ -267,7 +278,7 @@ curl -sS https://starship.rs/install.sh | sh
 
 #### Config
 
-* Powershell (Windows): Create `~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`:
+* Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
 
 ```ps
 Invoke-Expression (&starship init powershell)
