@@ -195,7 +195,7 @@ Source:
 * Powershell (Windows): Create `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
 
 ```ps
-Invoke-Expression (&starship init powershell)
+fnm env --use-on-cd | Out-String | Invoke-Expression
 ```
 
 * Fish:
