@@ -83,15 +83,18 @@ Source: https://git-scm.com/downloads
 
 ### Powershell
 
-* Windows: Instructions from https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5
+* Windows:
 
 ```sh
-# Install Powershell 7, which install pwsh.exe
+# Install Powershell 7, which installs pwsh.exe
 winget install --id Microsoft.PowerShell --source winget
 ```
 
 * macOS: N.A.
 * Linux: N.A.
+
+Source:
+* https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5
 
 ### Fish shell
 
@@ -189,7 +192,7 @@ fnm i <put-version-here>
 ```
 
 Source:
-* https://docs.volta.sh/guide/getting-started
+* https://github.com/Schniz/fnm
 
 #### Config
 
