@@ -300,8 +300,8 @@ Source: https://starship.rs/
 
 * bat
     * `cargo install --locked bat`
-* exa
-    * `cargo install exa`
+* eza
+    * `cargo install eza`
 * delta
     * `cargo install git-delta`
 
